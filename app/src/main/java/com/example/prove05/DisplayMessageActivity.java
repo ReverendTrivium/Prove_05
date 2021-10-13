@@ -30,7 +30,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
 
             Log.d("Prove05", "Received intent with " + scripture);
 
-            TextView textView = (TextView) findViewById(R.id.scriptureText);
+            TextView textView = findViewById(R.id.scriptureText);
             textView.setText(scripture);
         }
 

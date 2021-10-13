@@ -26,13 +26,14 @@ public class MainActivity extends AppCompatActivity {
     public void loadData(View view) {
         Toast toast = Toast.makeText(getApplicationContext(), "Scripture Loaded", Toast.LENGTH_SHORT);
         toast.show();
+
         SharedPreferences sharedPref = this.getSharedPreferences("Scripture", Context.MODE_PRIVATE);
         String book = sharedPref.getString(BOOK, "");
         String chapter = sharedPref.getString(CHAPTER, "");
         String verse = sharedPref.getString(VERSE, "");
-        EditText bookText = (EditText) findViewById(R.id.EditBook);
-        EditText chapterText = (EditText) findViewById(R.id.EditChapter);
-        EditText verseText = (EditText) findViewById(R.id.EditVerse);
+        EditText bookText = findViewById(R.id.EditBook);
+        EditText chapterText = findViewById(R.id.EditChapter);
+        EditText verseText = findViewById(R.id.EditVerse);
 
         bookText.setText(book);
         chapterText.setText(chapter);
@@ -42,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText bookText = (EditText) findViewById(R.id.EditBook);
-        EditText chapterText = (EditText) findViewById(R.id.EditChapter);
-        EditText verseText = (EditText) findViewById(R.id.EditVerse);
+        EditText bookText = findViewById(R.id.EditBook);
+        EditText chapterText = findViewById(R.id.EditChapter);
+        EditText verseText = findViewById(R.id.EditVerse);
 
 
         Log.d("","About to create intent with "
