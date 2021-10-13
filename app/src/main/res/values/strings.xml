@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Prove 05</string>
+    <string name="edit_message">Enter Information</string>
+    <string name="edit_text">Enter Information</string>
+    <string name="button_send">View Scripture</string>
+    <string name="button_load">Load Scripture</string>
+    <string name="button_save">Save Scripture</string>
+    <string name="view_chapter">Enter Favorite Chapter</string>
+    <string name="view_verse">Enter Favorite Verse</string>
+    <string name="view_book">Enter Favorite Book</string>
+    <string name="button_back">Back</string>
+</resources>
